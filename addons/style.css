@@ -1,0 +1,213 @@
+@font-face {
+    font-family: gothica;
+    src: url(../addons/PixelOperator.ttf);
+}
+
+@font-face {
+    font-family: KiwiSoda;
+    src: url(../addons/KiwiSoda.ttf);
+}
+
+@font-face {
+    font-family: Gumball;
+    src: url(../addons/Gumball.ttf)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: gothica;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-color: rgba(22, 22, 22, 0.8);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 242, 89, 0.5);
+    padding: 4%;
+    color: rgba(37, 37, 37, 1);
+}
+
+header>h1 {
+    font-size: xx-large;
+    font-family: KiwiSoda;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    background-color: rgba(255, 242, 89, 0.5);
+    color: rgba(91, 91, 91, 1);
+}
+
+/* CLASS */
+
+.main-dad {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10% 15%;
+}
+
+.main-containers {
+    background-color: rgba(37, 37, 37, 1);
+    color: wheat;
+    padding: 10%;
+    border-radius: 9px;
+}
+
+.overlay {
+    font-family: gothica;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(37, 37, 37, 1);
+    color: whitesmoke;
+}
+
+.overlay-products {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1%;
+    padding: 2%;
+    background-color: rgba(22, 22, 22, 0.8);
+    border-radius: 5px;
+    color: rgba(237, 237, 237, 1)
+}
+
+.overlay-text {
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    width: 50%;
+}
+
+.overlay-text>h3 {
+    margin: 10% 0;
+}
+
+.overlay-products img {
+    width: 150%;
+}
+
+.overlay-img {
+    width: 50%;
+}
+
+
+/* ID */
+
+#toggle {
+    display: none;
+}
+
+#catalog {
+    margin: 5% 0;
+    font-size: x-large;
+    background-color: rgba(57, 57, 57, 1);
+    color: wheat;
+    border-radius: 7px;
+    width: fit-content;
+    padding: 2% 6%;
+    border: 1px solid black;
+}
+
+#catalog:hover {
+    background-color: rgba(36, 36, 36, 0.8);
+}
+
+#overlay-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#overlay-header>h2 {
+    padding: 2% 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: xx-large;
+    font-family: gothica;
+}
+
+#overlay-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    margin: 5%;
+    min-height: 100vh;
+    background-color: rgba(86, 86, 86, 0.8);
+    border-radius: 5px;
+}
+
+#overlay-contact {
+    position: absolute;
+    display: none;
+    width: 40%;
+    background-color: rgba(70, 70, 70, 0.9);
+    padding: 2%;
+    border-radius: 5px;
+}
+
+#overlay-contact > form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#close-btn {
+    padding: 0 1%;
+    margin-left: 92%;
+    margin-top: 1%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: large;
+    border-radius: 5px;
+    border: 1px solid rgba(121, 121, 121, 0.5);
+    background-color: rgba(56, 56, 56, 0.8);
+    color: whitesmoke;
+}
+
+#close-btn:hover {
+    background-color: rgba(26, 26, 26, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+#contact {
+    background-color: rgba(37, 37, 37, 0);
+}
+
+#contact-btn {
+    padding: 5%;
+    font-size: x-large;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: rgba(72, 72, 72, 0.8);
+    color: whitesmoke;
+}
+
+#contact-btn:hover {
+    background-color: rgba(57, 57, 57, 0.8);
+}
+
+@media screen and (min-width: 1000px) {}
